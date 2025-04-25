@@ -1,11 +1,14 @@
 <?php
 session_start();
 include("conn.php");
+include"verificacao.php";
+
 
 $query = "select * from usuarios";
 $result = mysqli_query( $con ,$query);
 
 ?>
+<a href="logout.php">Sair</a><br/>
 <!-- $retorno = mysqli_fetch_all($result);
 // echo $retorno['nome'];
 // echo $retorno['senha'];
