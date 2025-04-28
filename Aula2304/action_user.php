@@ -1,7 +1,6 @@
 <?php
-session_start();
 include "conn.php";
-include"verificacao.php";
+include "verificacao.php";
 
 $nome = mysqli_real_escape_string($con,$_POST['nome']);
 $sobrenome = mysqli_real_escape_string($con,$_POST['sobrenome']);

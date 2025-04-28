@@ -10,8 +10,8 @@ $con = @new mysqli($host,$user,$senha,$db,$port);
 if ($con -> connect_errno){
     echo "Falha na conexão: (".$con->connect_errno.")".$con-> connect_error;
 }
-else{
-    echo "Conectado: ".$con->host_info. "\n";
-}
+// else{
+//     echo "Conectado: ".$con->host_info. "\n";
+// }
 
 ?>

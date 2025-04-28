@@ -1,7 +1,11 @@
 <?php
-session_start();
-include"conn.php";
-include"verificacao.php";
+include "conn.php";
+include "verificacao.php";
+
+if ($_SESSION['setor'] != 'user'){
+    header('location: index.php');
+    exit();
+}
 // echo "nome = ".$_SESSION['nome']."<br>";
 // echo "setor = ".$_SESSION['setor']."<br>";
 ?>

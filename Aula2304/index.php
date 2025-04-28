@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="action_user.php" method="POST">
+    <form action="action.php" method="POST">
         <p>Nome</p><input type="text" name="nome">
         <p>Senha</p><input type="password" id="" name="senha">
         <p></p><input type="submit">

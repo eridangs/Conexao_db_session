@@ -1,8 +1,11 @@
 <?php
-session_start();
-include("conn.php");
-include"verificacao.php";
+include "conn.php";
+include "verificacao.php";
 
+if ($_SESSION['setor'] != 'admin'){
+    header('location: index.php');
+    exit();
+}
 
 $query = "select * from usuarios";
 $result = mysqli_query( $con ,$query);
